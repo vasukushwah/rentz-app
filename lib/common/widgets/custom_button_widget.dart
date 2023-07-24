@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:rentz/constants/global_constants.dart';
 
 enum IconPosition {
   beforeText,
@@ -72,10 +73,10 @@ class CustomButtonWidget extends StatelessWidget {
               text!,
               style: textStyle ??
                   TextStyle(
-                    fontSize: 16,
-                    color: textColor ?? Colors.white,
-                    fontWeight: FontWeight.w700,
-                  ),
+                      fontSize: 16,
+                      color: textColor ?? Colors.white,
+                      fontWeight: FontWeight.w700,
+                      height: GlobalConstants.textHeight),
             ),
           if (text != null &&
               hasIcon() &&
@@ -103,6 +104,7 @@ class CustomButtonWidget extends StatelessWidget {
         svgIconPath!,
         width: iconSize,
         height: iconSize,
+        alignment: Alignment.center,
       );
     } else {
       return Container();

@@ -43,7 +43,7 @@ class OnBoardingScreen extends StatelessWidget {
                           fontSize: 16,
                           fontWeight: FontWeight.w700,
                         ),
-                        padding: const EdgeInsets.symmetric(vertical: 8),
+                        padding: const EdgeInsets.symmetric(vertical: 12),
                         onTap: () {
                           // Navigator.pushReplacement(
                           //   context,

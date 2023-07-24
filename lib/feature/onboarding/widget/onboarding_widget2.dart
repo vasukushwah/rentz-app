@@ -83,6 +83,7 @@ class _OnBoardingWidget2State extends State<OnBoardingWidget2> {
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.w700,
+                  height: GlobalConstants.textHeight,
                 ),
               ),
               const SizedBox(
@@ -110,6 +111,7 @@ class _OnBoardingWidget2State extends State<OnBoardingWidget2> {
                 "I didn't receive a code (0:52)",
                 style: TextStyle(
                     fontSize: 16,
+                    height: GlobalConstants.textHeight,
                     fontWeight: FontWeight.w400,
                     color: GlobalConstants.blackKnight700),
               )

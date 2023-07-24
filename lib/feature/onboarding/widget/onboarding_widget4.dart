@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rentz/constants/global_constants.dart';
 import 'package:rentz/feature/onboarding/widget/back_next_buttons_row.dart';
+import 'package:rentz/feature/onboarding/widget/dashed_line_devider.dart';
 import 'package:rentz/feature/setPayment/screens/set_payment_screen.dart';
 
 class OnBoardingWidget4 extends StatefulWidget {
@@ -67,6 +68,7 @@ class _OnBoardingWidget4State extends State<OnBoardingWidget4> {
                 "Rentz Terms & Review Privacy Policy",
                 style: TextStyle(
                     fontSize: 20,
+                    height: GlobalConstants.textHeight,
                     fontWeight: FontWeight.w700,
                     color: GlobalConstants.blackKnight900),
               ),
@@ -76,10 +78,15 @@ class _OnBoardingWidget4State extends State<OnBoardingWidget4> {
               const Text(
                 "By selecting “I Agree” below, I have reviewed and agree to the Terms & Conditions and acknowledge the Privacy Policy. I am at least 18 years of age.",
                 style: TextStyle(
+                    height: GlobalConstants.textHeight,
                     fontSize: 16,
-                    fontWeight: FontWeight.w400,
+                    fontWeight: FontWeight.normal,
                     color: GlobalConstants.blackKnight700),
               ),
+              const SizedBox(
+                height: 16,
+              ),
+              const DashedLineDevider(color: GlobalConstants.blackKnight400),
               const SizedBox(
                 height: 16,
               ),
